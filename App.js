@@ -1,3 +1,4 @@
+import Connected from "./pages/Connected/Connected";
 import Login from "./pages/Login/Login";
 
 const pageType = {
@@ -6,5 +7,6 @@ const pageType = {
 };
 
 export default function App() {
-  return <Login />;
+  return <Connected />;
+  //return <Login />;
 }
