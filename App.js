@@ -1,5 +1,5 @@
-import Connected from "./pages/Connected/Connected";
-import Login from "./pages/Login/Login";
+import Connected from "./pages/Connected";
+import Login from "./pages/Login";
 
 const pageType = {
   LOGIN: 0,

@@ -9,6 +9,12 @@ const wrappers = {
     color: "#fff",
     padding: 50,
   },
+  containerLarge: {
+    flex: 1,
+    backgroundColor: "#09090b",
+    color: "#fff",
+    padding: 10,
+  },
   logoStyle: {
     backgroundColor: "#27272a",
     display: "flex",
