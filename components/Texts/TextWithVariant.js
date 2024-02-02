@@ -13,7 +13,11 @@ const TextWithVariant = ({
   style,
 }) => {
   return (
-    <Text style={{ ...variant, ...Style.main, ...style }} color="red">
+    <Text
+      style={{ ...variant, ...Style.main, ...style }}
+      variant={size}
+      color="red"
+    >
       {children}
     </Text>
   );
