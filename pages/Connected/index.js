@@ -10,19 +10,25 @@ const Connected = () => {
     {
       key: "dashboard",
       title: "Saisie",
-      focusedIcon: "heart",
-      unfocusedIcon: "heart-outline",
+      focusedIcon: "home-outline",
+      unfocusedIcon: "home",
     },
     {
       key: "stats",
       title: "Statistiques",
       focusedIcon: "star",
     },
+    {
+      key: "params",
+      title: "Paramètres",
+      focusedIcon: "cog",
+    },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
     dashboard: () => <Dashboard />,
     stats: () => <Text>Bar</Text>,
+    params: () => <Text>Params</Text>,
   });
 
   return (

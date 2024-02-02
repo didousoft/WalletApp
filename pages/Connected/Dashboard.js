@@ -7,7 +7,7 @@ import TextWithVariant, {
 const Dashboard = () => {
   return (
     <View style={appStyles.containerLarge}>
-      <TextWithVariant variant={textVariantColor.primary}>
+      <TextWithVariant variant={textVariantColor.default}>
         Page 1
       </TextWithVariant>
     </View>

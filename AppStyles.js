@@ -13,7 +13,8 @@ const wrappers = {
     flex: 1,
     backgroundColor: "#09090b",
     color: "#fff",
-    padding: 10,
+    paddingVertical: 20,
+    paddingHorizontal:15
   },
   logoStyle: {
     backgroundColor: "#27272a",
