@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
 
 export const dividerOrientation = {
   vertical: "paddingVertical",
@@ -10,7 +10,11 @@ const Divider = ({
   direction = dividerOrientation.vertical,
   customStyle,
 }) => {
-  return <View style={{ [direction]: size, ...customStyle }}>&nbsp;</View>;
+  return (
+    <View style={{ [direction]: size, ...customStyle }}>
+      <Text>&nbsp;</Text>
+    </View>
+  );
 };
 
 export default Divider;

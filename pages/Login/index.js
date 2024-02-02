@@ -2,8 +2,9 @@ import { Image, Text, TextInput, View } from "react-native";
 import { appStyles } from "../../AppStyles";
 import logo from "../../assets/logo.png";
 import RoundedButton from "../../components/Buttons/RoundedButton";
+import { pageType } from "../../types/PageType";
 
-const Login = () => {
+const Login = ({ onLogin }) => {
   return (
     <View style={appStyles.container}>
       <View style={appStyles.logoStyle}>
@@ -35,7 +36,10 @@ const Login = () => {
         <Text style={{ ...appStyles.title, textAlign: "right" }}>
           Mot de passe oublié?
         </Text>
-        <RoundedButton variant="primary" onClick={() => console.log("todo")}>
+        <RoundedButton
+          variant="primary"
+          onClick={() => onLogin(pageType.CONNECTED)}
+        >
           Valider
         </RoundedButton>
       </View>

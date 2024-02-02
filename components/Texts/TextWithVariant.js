@@ -2,40 +2,41 @@ import { StyleSheet } from "react-native";
 import { Text } from "react-native-paper";
 
 export const TextSizes = {
-  Large: "Large",
-  Medium: "Medium",
-  Small: "Small",
+  Large: "titleLarge",
+  Medium: "labelLarge",
+  Small: "bodySmall",
+  ExtraSmall: "labelSmall",
 };
 
-const TextWithVariant = ({
-  variant = textVariantColor.default,
-  children,
-  style,
-}) => {
-  return (
-    <Text
-      style={{ ...variant, ...Style.main, ...style }}
-      variant={size}
-      color="red"
-    >
-      {children}
-    </Text>
-  );
-};
-
-// TODO : add more variants here
 export const textVariantColor = StyleSheet.create({
   primary: {
-    color: "blue",
+    color: "#2196f3",
+  },
+  success: {
+    color: "#4caf50",
+  },
+  danger: {
+    color: "#f44336",
+  },
+  warning: {
+    color: "#ff9800",
   },
   default: {
     color: "#fff",
   },
 });
 
-const Style = StyleSheet.create({
-  main: {
-    flex: 1,
-  },
-});
+const TextWithVariant = ({
+  variant = textVariantColor.default,
+  children,
+  style,
+  size = TextSizes.Medium,
+}) => {
+  return (
+    <Text style={{ ...variant, ...style }} variant={size}>
+      {children}
+    </Text>
+  );
+};
+
 export default TextWithVariant;

@@ -10,11 +10,12 @@ const wrappers = {
     padding: 50,
   },
   containerLarge: {
-    flex: 1,
     backgroundColor: "#09090b",
     color: "#fff",
     paddingVertical: 20,
     paddingHorizontal: 15,
+    flex: 1,
+    gap: 15,
   },
   logoStyle: {
     backgroundColor: "#27272a",
