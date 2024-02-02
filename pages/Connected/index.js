@@ -9,7 +9,7 @@ const Connected = () => {
   const [routes] = useState([
     {
       key: "dashboard",
-      title: "Saisie",
+      title: "Accueil",
       focusedIcon: "home-outline",
       unfocusedIcon: "home",
     },

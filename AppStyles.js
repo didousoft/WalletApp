@@ -14,7 +14,7 @@ const wrappers = {
     backgroundColor: "#09090b",
     color: "#fff",
     paddingVertical: 20,
-    paddingHorizontal:15
+    paddingHorizontal: 15,
   },
   logoStyle: {
     backgroundColor: "#27272a",
@@ -38,6 +38,22 @@ const typography = {
     fontSize: 13,
     color: "#71717a",
     fontWeight: "600",
+  },
+};
+
+export const twColors = {
+  neutral: {
+    50: "#fafafa",
+    100: "#f5f5f5",
+    200: "#e5e5e5",
+    300: "#d4d4d4",
+    400: "#fafafa",
+    500: "#737373",
+    600: "#525252",
+    700: "#404040",
+    800: "#262626",
+    900: "#171717",
+    950: "##0a0a0a",
   },
 };
 
