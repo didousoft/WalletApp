@@ -38,7 +38,7 @@ const Login = ({ onLogin }) => {
         </Text>
         <RoundedButton
           variant="primary"
-          onClick={() => onLogin(pageType.CONNECTED)}
+          onPress={() => onLogin(pageType.CONNECTED)}
         >
           Valider
         </RoundedButton>

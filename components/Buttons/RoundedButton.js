@@ -1,8 +1,8 @@
 import { TouchableOpacity, StyleSheet, Text } from "react-native";
 
-const RoundedButton = ({ children, variant = "primary", onClick }) => {
+const RoundedButton = ({ children, variant = "primary", onPress }) => {
   return (
-    <TouchableOpacity onPress={onClick} activeOpacity={0.8}>
+    <TouchableOpacity onPress={onPress} activeOpacity={0.8}>
       <Text
         style={
           style.normalClassMap[variant] ?? style.gradientClassMap[variant] ?? {}

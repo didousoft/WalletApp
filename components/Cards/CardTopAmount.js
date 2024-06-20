@@ -1,30 +1,33 @@
 import { StyleSheet, View } from "react-native";
-import { Card, IconButton, MD3Colors } from "react-native-paper";
+import { Card, IconButton } from "react-native-paper";
 import { twColors } from "../../AppStyles";
 import TextWithVariant, {
   TextSizes,
   textVariantColor,
 } from "../Texts/TextWithVariant";
+import { constants } from "../../types/constants";
 
-const CardTopAmount = () => {
+const CardTopAmount = ({
+  onPlusPressed,
+  title = "Ce mois",
+  currAmount = "100 000",
+  children,
+  iconSymbol = "plus",
+}) => {
   return (
-    <Card style={Style.cardStyle}>
-      <View style={Style.flex}>
-        <View style={Style.amountsClass}>
-          <TextWithVariant size={TextSizes.Small}>Ce mois</TextWithVariant>
-          <TextWithVariant size={TextSizes.Large}>10 0000 TND</TextWithVariant>
-          <TextWithVariant size={TextSizes.Small}>
-            Dernier mois :{" "}
-            <TextWithVariant size={TextSizes.Small}>2000 TND </TextWithVariant>
-            <TextWithVariant variant={textVariantColor.success}>
-              (+19%)
-            </TextWithVariant>
+    <Card style={CardTopAmountStyle.cardStyle}>
+      <View style={CardTopAmountStyle.flex}>
+        <View style={CardTopAmountStyle.amountsClass}>
+          <TextWithVariant size={TextSizes.Small}>{title}</TextWithVariant>
+          <TextWithVariant size={TextSizes.Large}>
+            {currAmount} {constants.currency}
           </TextWithVariant>
+          {children}
         </View>
 
         <IconButton
-          onPress={() => console.log("todo")}
-          icon="send"
+          onPress={() => onPlusPressed()}
+          icon={iconSymbol}
           size={20}
           mode="contained-tonal"
           iconColor={"white"}
@@ -35,7 +38,7 @@ const CardTopAmount = () => {
   );
 };
 
-const Style = StyleSheet.create({
+export const CardTopAmountStyle = StyleSheet.create({
   cardStyle: {
     backgroundColor: twColors.neutral[900],
     padding: 20,

@@ -20,7 +20,7 @@ export default function App() {
 
 const Style = StyleSheet.create({
   main: {
-    paddingTop: StatusBar.currentHeight,
+    //paddingTop: StatusBar.currentHeight,
     width: "100%",
     height: "100%",
   },
