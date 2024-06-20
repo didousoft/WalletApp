@@ -40,7 +40,7 @@ To get started with WalletApp, follow these steps:
 
     Copier le code
 
-    `git clone https://github.com/yourusername/WalletApp.git`
+    ``git clone https://github.com/yourusername/WalletApp.git``
 
 2.  Navigate to the project directory:
 
